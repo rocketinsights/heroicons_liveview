@@ -49,8 +49,6 @@ defmodule Mix.Tasks.Heroicons.Generate do
     defmodule #{module_name} do
       use Phoenix.Component
 
-      @default_class "w-5 h-5"
-
       #{Enum.join(functions, "\n")}
     end
     """
@@ -60,8 +58,6 @@ defmodule Mix.Tasks.Heroicons.Generate do
     """
     @doc "#{docs}"
     def #{function_name}(assigns) do
-      assigns = assign_new(assigns, :class, @default_class)
-
       ~H\"\"\"
       #{svg}
       \"\"\"
