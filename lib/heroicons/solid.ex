@@ -1,5 +1,16 @@
 defmodule Heroicons.Solid do
+  @moduledoc """
+  Icon name can be the function or passed in as a icon eg.
+  <Heroicons.Solid.search class="w-6 h-6" />
+  <Heroicons.Solid.render icon={:search} class="w-6 h-6" />
+
+  <Heroicons.Solid.search class="w-6 h-6" />
+  <Heroicons.Solid.render icon={:search} class="w-6 h-6" />
+  """
+
   use Phoenix.Component
+
+  def render(assigns), do: apply(__MODULE__, assigns.icon, [assigns])
 
   @doc "solid/hand.svg"
   def hand(assigns) do

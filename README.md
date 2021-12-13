@@ -7,7 +7,7 @@ A collection of Phoenix LiveView Components for all SVG [Heroicons](https://hero
 ```elixir
 def deps do
   [
-    {:heroicons_liveview, "~> 0.1.0"}
+    {:heroicons_liveview, "~> 0.3.0"}
   ]
 end
 ```
@@ -22,6 +22,11 @@ using default classes
 specifying classes
 ```html
 <Heroicons.Solid.archive class="h-10 w-10" />
+```
+
+using render method
+```html
+<Heroicons.Solid.render icon: :archive class="h-10 w-10" />
 ```
 
 ## Regenerate icons

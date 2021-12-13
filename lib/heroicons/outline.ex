@@ -1,5 +1,16 @@
 defmodule Heroicons.Outline do
+  @moduledoc """
+  Icon name can be the function or passed in as a icon eg.
+  <Heroicons.Outline.search class="w-6 h-6" />
+  <Heroicons.Outline.render icon={:search} class="w-6 h-6" />
+
+  <Heroicons.Outline.search class="w-6 h-6" />
+  <Heroicons.Outline.render icon={:search} class="w-6 h-6" />
+  """
+
   use Phoenix.Component
+
+  def render(assigns), do: apply(__MODULE__, assigns.icon, [assigns])
 
   @doc "outline/hand.svg"
   def hand(assigns) do

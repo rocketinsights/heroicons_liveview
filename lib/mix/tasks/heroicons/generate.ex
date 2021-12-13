@@ -47,7 +47,18 @@ defmodule Mix.Tasks.Heroicons.Generate do
   defp build_module(functions, module_name) do
     """
     defmodule #{module_name} do
+      @moduledoc \"\"\"
+      Icon name can be the function or passed in as a icon eg.
+      <#{module_name}.search class="w-6 h-6" />
+      <#{module_name}.render icon={:search} class="w-6 h-6" />
+
+      <#{module_name}.search class="w-6 h-6" />
+      <#{module_name}.render icon={:search} class="w-6 h-6" />
+      \"\"\"
+
       use Phoenix.Component
+
+      def render(assigns), do: apply(__MODULE__, assigns.icon, [assigns])
 
       #{Enum.join(functions, "\n")}
     end
