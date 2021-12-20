@@ -29,12 +29,31 @@ defmodule Mix.Tasks.Heroicons.Generate do
     svg_filepath = Path.join(src_path, filename)
     docs = "#{folder}/#{filename}"
 
-    svg_content =
-      File.read!(svg_filepath)
-      |> String.trim()
-      |> String.replace(~r/<svg /, "<svg class={@class} ")
+    svg_content = File.read!(svg_filepath) |> String.trim()
+    [{_, attributes, children} | _] = Floki.parse_document!(svg_content)
+    attributes = Map.new(attributes)
 
-    filename |> function_name() |> build_function(docs, svg_content)
+    assigns = %{
+      class: Map.get(attributes, "class", ""),
+      fill: Map.get(attributes, "fill", "none"),
+      stroke: Map.get(attributes, "stroke", "none")
+    }
+
+    attributes =
+      attributes
+      |> Map.delete("class")
+      |> Map.delete("fill")
+      |> Map.delete("stroke")
+      |> Enum.map(fn {k, v} -> "#{k}=\"#{v}\"" end)
+      |> Enum.join(" ")
+
+    svg_content = """
+    <svg class={@class} fill={@fill} stroke={@stroke} #{attributes}>
+      #{Floki.raw_html(children)}
+    </svg>
+    """
+
+    filename |> function_name() |> build_function(docs, svg_content, assigns)
   end
 
   defp function_name(current_filename) do
@@ -65,10 +84,16 @@ defmodule Mix.Tasks.Heroicons.Generate do
     """
   end
 
-  defp build_function(function_name, docs, svg) do
+  defp build_function(function_name, docs, svg, assigns) do
     """
     @doc "#{docs}"
     def #{function_name}(assigns) do
+      assigns =
+        assigns
+        |> assign_new(:class, fn -> \"#{Map.get(assigns, :class)}\" end)
+        |> assign_new(:fill, fn -> \"#{Map.get(assigns, :fill)}\" end)
+        |> assign_new(:stroke, fn -> \"#{Map.get(assigns, :stroke)}\" end)
+
       ~H\"\"\"
       #{svg}
       \"\"\"
