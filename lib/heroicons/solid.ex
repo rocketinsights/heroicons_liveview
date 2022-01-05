@@ -10,7 +10,15 @@ defmodule Heroicons.Solid do
 
   use Phoenix.Component
 
-  def render(assigns), do: apply(__MODULE__, assigns.icon, [assigns])
+  def render(%{icon: icon} = assigns) when is_bitstring(icon) do
+    # load the function names into the atom table
+    __MODULE__.module_info(:functions) |> Keyword.keys()
+    icon_atom = icon |> String.replace("-", "_") |> String.downcase() |> String.to_existing_atom()
+
+    apply(__MODULE__, icon_atom, [assigns])
+  end
+
+  def render(%{icon: icon} = assigns), do: apply(__MODULE__, icon, [assigns])
 
   @doc "solid/hand.svg"
   def hand(assigns) do
