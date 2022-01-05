@@ -2,7 +2,7 @@ defmodule HeroiconsLiveView.MixProject do
   use Mix.Project
 
   @project_url "https://github.com/rocketinsights/heroicons_liveview"
-  @version "0.4.0"
+  @version "0.4.1"
 
   def project do
     [
@@ -38,7 +38,7 @@ defmodule HeroiconsLiveView.MixProject do
     [
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
       {:jason, "~> 1.2.2", only: :dev},
-      {:floki, "~> 0.32.0", only: :dev},
+      {:floki, "~> 0.32.0", only: :dev, runtime: false},
       {:phoenix_live_view, ">= 0.16.0"}
     ]
   end
