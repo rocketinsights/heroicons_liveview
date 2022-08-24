@@ -3,15 +3,18 @@ defmodule Mix.Tasks.Heroicons.Generate do
 
   @shortdoc "Convert source SVG files into Phoenix LiveView components"
   def run(_) do
-    Enum.each(["outline", "solid"], &loop_directory/1)
+    Enum.each(
+      [{"24/outline", "outline"}, {"24/solid", "solid"}, {"20/solid", "mini"}],
+      &loop_directory/1
+    )
 
     Mix.Task.run("format")
   end
 
-  defp loop_directory(folder) do
+  defp loop_directory({folder, mod_name}) do
     src_path = "./priv/heroicons/src/#{folder}/"
-    dest_path = "./lib/heroicons/#{String.downcase(folder)}.ex"
-    module_name = "Heroicons.#{String.capitalize(folder)}"
+    dest_path = "./lib/heroicons/#{String.downcase(mod_name)}.ex"
+    module_name = "Heroicons.#{String.capitalize(mod_name)}"
 
     File.rm(dest_path)
 
@@ -19,7 +22,7 @@ defmodule Mix.Tasks.Heroicons.Generate do
       src_path
       |> File.ls!()
       |> Enum.filter(&(Path.extname(&1) == ".svg"))
-      |> Enum.map(&build_component(folder, src_path, &1))
+      |> Enum.map(&build_component(mod_name, src_path, &1))
       |> build_module(module_name)
 
     File.write!(dest_path, content)
@@ -103,7 +106,7 @@ defmodule Mix.Tasks.Heroicons.Generate do
         |> assign_new(:stroke, fn -> \"#{Map.get(assigns, :stroke)}\" end)
 
       ~H\"\"\"
-      #{svg}
+      #{svg}\
       \"\"\"
     end
     """
