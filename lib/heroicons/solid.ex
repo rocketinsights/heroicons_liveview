@@ -860,6 +860,21 @@ defmodule Heroicons.Solid do
     """
   end
 
+  @doc "solid/exclamation-triangle.svg"
+  def exclamation_triangle(assigns) do
+    assigns =
+      assigns
+      |> assign_new(:class, fn -> "" end)
+      |> assign_new(:fill, fn -> "currentColor" end)
+      |> assign_new(:stroke, fn -> "none" end)
+
+    ~H"""
+    <svg class={@class} fill={@fill} stroke={@stroke} aria-hidden="true" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M9.401 4.504c1.155-2.001 4.043-2.001 5.197 0l7.355 12.747c1.154 2-.29 4.5-2.599 4.5H4.645c-2.309 0-3.752-2.5-2.598-4.5L9.4 4.504zM12 9.75a.75.75 0 01.75.75v3.75a.75.75 0 01-1.5 0V10.5a.75.75 0 01.75-.75zM12 18a.75.75 0 100-1.5.75.75 0 000 1.5z" clip-rule="evenodd"></path>
+    </svg>
+    """
+  end
+
   @doc "solid/building-office-2.svg"
   def building_office_2(assigns) do
     assigns =
@@ -1085,6 +1100,21 @@ defmodule Heroicons.Solid do
     """
   end
 
+  @doc "solid/bars-arrow-down.svg"
+  def bars_arrow_down(assigns) do
+    assigns =
+      assigns
+      |> assign_new(:class, fn -> "" end)
+      |> assign_new(:fill, fn -> "currentColor" end)
+      |> assign_new(:stroke, fn -> "none" end)
+
+    ~H"""
+    <svg class={@class} fill={@fill} stroke={@stroke} aria-hidden="true" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M2.25 4.5A.75.75 0 013 3.75h14.25a.75.75 0 010 1.5H3a.75.75 0 01-.75-.75zm0 4.5A.75.75 0 013 8.25h9.75a.75.75 0 010 1.5H3A.75.75 0 012.25 9zm15-.75A.75.75 0 0118 9v10.19l2.47-2.47a.75.75 0 111.06 1.06l-3.75 3.75a.75.75 0 01-1.06 0l-3.75-3.75a.75.75 0 111.06-1.06l2.47 2.47V9a.75.75 0 01.75-.75zm-15 5.25a.75.75 0 01.75-.75h9.75a.75.75 0 010 1.5H3a.75.75 0 01-.75-.75z" clip-rule="evenodd"></path>
+    </svg>
+    """
+  end
+
   @doc "solid/beaker.svg"
   def beaker(assigns) do
     assigns =
@@ -1261,6 +1291,21 @@ defmodule Heroicons.Solid do
     ~H"""
     <svg class={@class} fill={@fill} stroke={@stroke} aria-hidden="true" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
     <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd"></path>
+    </svg>
+    """
+  end
+
+  @doc "solid/code-bracket.svg"
+  def code_bracket(assigns) do
+    assigns =
+      assigns
+      |> assign_new(:class, fn -> "" end)
+      |> assign_new(:fill, fn -> "currentColor" end)
+      |> assign_new(:stroke, fn -> "none" end)
+
+    ~H"""
+    <svg class={@class} fill={@fill} stroke={@stroke} aria-hidden="true" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M14.447 3.027a.75.75 0 01.527.92l-4.5 16.5a.75.75 0 01-1.448-.394l4.5-16.5a.75.75 0 01.921-.526zM16.72 6.22a.75.75 0 011.06 0l5.25 5.25a.75.75 0 010 1.06l-5.25 5.25a.75.75 0 11-1.06-1.06L21.44 12l-4.72-4.72a.75.75 0 010-1.06zm-9.44 0a.75.75 0 010 1.06L2.56 12l4.72 4.72a.75.75 0 11-1.06 1.06L.97 12.53a.75.75 0 010-1.06l5.25-5.25a.75.75 0 011.06 0z" clip-rule="evenodd"></path>
     </svg>
     """
   end
@@ -1445,6 +1490,21 @@ defmodule Heroicons.Solid do
     """
   end
 
+  @doc "solid/code-bracket-square.svg"
+  def code_bracket_square(assigns) do
+    assigns =
+      assigns
+      |> assign_new(:class, fn -> "" end)
+      |> assign_new(:fill, fn -> "currentColor" end)
+      |> assign_new(:stroke, fn -> "none" end)
+
+    ~H"""
+    <svg class={@class} fill={@fill} stroke={@stroke} aria-hidden="true" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M3 6a3 3 0 013-3h12a3 3 0 013 3v12a3 3 0 01-3 3H6a3 3 0 01-3-3V6zm14.25 6a.75.75 0 01-.22.53l-2.25 2.25a.75.75 0 11-1.06-1.06L15.44 12l-1.72-1.72a.75.75 0 111.06-1.06l2.25 2.25c.141.14.22.331.22.53zm-10.28-.53a.75.75 0 000 1.06l2.25 2.25a.75.75 0 101.06-1.06L8.56 12l1.72-1.72a.75.75 0 10-1.06-1.06l-2.25 2.25z" clip-rule="evenodd"></path>
+    </svg>
+    """
+  end
+
   @doc "solid/bell.svg"
   def bell(assigns) do
     assigns =
@@ -1475,21 +1535,6 @@ defmodule Heroicons.Solid do
     """
   end
 
-  @doc "solid/code.svg"
-  def code(assigns) do
-    assigns =
-      assigns
-      |> assign_new(:class, fn -> "" end)
-      |> assign_new(:fill, fn -> "currentColor" end)
-      |> assign_new(:stroke, fn -> "none" end)
-
-    ~H"""
-    <svg class={@class} fill={@fill} stroke={@stroke} aria-hidden="true" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-    <path fill-rule="evenodd" d="M14.447 3.027a.75.75 0 01.527.92l-4.5 16.5a.75.75 0 01-1.448-.394l4.5-16.5a.75.75 0 01.921-.526zM16.72 6.22a.75.75 0 011.06 0l5.25 5.25a.75.75 0 010 1.06l-5.25 5.25a.75.75 0 11-1.06-1.06L21.44 12l-4.72-4.72a.75.75 0 010-1.06zm-9.44 0a.75.75 0 010 1.06L2.56 12l4.72 4.72a.75.75 0 11-1.06 1.06L.97 12.53a.75.75 0 010-1.06l5.25-5.25a.75.75 0 011.06 0z" clip-rule="evenodd"></path>
-    </svg>
-    """
-  end
-
   @doc "solid/cake.svg"
   def cake(assigns) do
     assigns =
@@ -1501,21 +1546,6 @@ defmodule Heroicons.Solid do
     ~H"""
     <svg class={@class} fill={@fill} stroke={@stroke} aria-hidden="true" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
     <path d="M15 1.784l-.796.796a1.125 1.125 0 101.591 0L15 1.784zM12 1.784l-.796.796a1.125 1.125 0 101.591 0L12 1.784zM9 1.784l-.796.796a1.125 1.125 0 101.591 0L9 1.784zM9.75 7.547c.498-.02.998-.035 1.5-.042V6.75a.75.75 0 011.5 0v.755c.502.007 1.002.021 1.5.042V6.75a.75.75 0 011.5 0v.88l.307.022c1.55.117 2.693 1.427 2.693 2.946v1.018a62.182 62.182 0 00-13.5 0v-1.018c0-1.519 1.143-2.829 2.693-2.946l.307-.022v-.88a.75.75 0 011.5 0v.797zM12 12.75c-2.472 0-4.9.184-7.274.54-1.454.217-2.476 1.482-2.476 2.916v.384a4.104 4.104 0 012.585.364 2.605 2.605 0 002.33 0 4.104 4.104 0 013.67 0 2.605 2.605 0 002.33 0 4.104 4.104 0 013.67 0 2.605 2.605 0 002.33 0 4.104 4.104 0 012.585-.364v-.384c0-1.434-1.022-2.7-2.476-2.917A49.138 49.138 0 0012 12.75zM21.75 18.131a2.604 2.604 0 00-1.915.165 4.104 4.104 0 01-3.67 0 2.604 2.604 0 00-2.33 0 4.104 4.104 0 01-3.67 0 2.604 2.604 0 00-2.33 0 4.104 4.104 0 01-3.67 0 2.604 2.604 0 00-1.915-.165v2.494c0 1.036.84 1.875 1.875 1.875h15.75c1.035 0 1.875-.84 1.875-1.875v-2.494z"></path>
-    </svg>
-    """
-  end
-
-  @doc "solid/exclaimation-circle.svg"
-  def exclaimation_circle(assigns) do
-    assigns =
-      assigns
-      |> assign_new(:class, fn -> "" end)
-      |> assign_new(:fill, fn -> "currentColor" end)
-      |> assign_new(:stroke, fn -> "none" end)
-
-    ~H"""
-    <svg class={@class} fill={@fill} stroke={@stroke} aria-hidden="true" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-    <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zM12 8.25a.75.75 0 01.75.75v3.75a.75.75 0 01-1.5 0V9a.75.75 0 01.75-.75zm0 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z" clip-rule="evenodd"></path>
     </svg>
     """
   end
@@ -1756,6 +1786,21 @@ defmodule Heroicons.Solid do
     ~H"""
     <svg class={@class} fill={@fill} stroke={@stroke} aria-hidden="true" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
     <path d="M3.375 3C2.339 3 1.5 3.84 1.5 4.875v.75c0 1.036.84 1.875 1.875 1.875h17.25c1.035 0 1.875-.84 1.875-1.875v-.75C22.5 3.839 21.66 3 20.625 3H3.375z"></path><path fill-rule="evenodd" d="M3.087 9l.54 9.176A3 3 0 006.62 21h10.757a3 3 0 002.995-2.824L20.913 9H3.087zm6.133 2.845a.75.75 0 011.06 0l1.72 1.72 1.72-1.72a.75.75 0 111.06 1.06l-1.72 1.72 1.72 1.72a.75.75 0 11-1.06 1.06L12 15.685l-1.72 1.72a.75.75 0 11-1.06-1.06l1.72-1.72-1.72-1.72a.75.75 0 010-1.06z" clip-rule="evenodd"></path>
+    </svg>
+    """
+  end
+
+  @doc "solid/rss.svg"
+  def rss(assigns) do
+    assigns =
+      assigns
+      |> assign_new(:class, fn -> "" end)
+      |> assign_new(:fill, fn -> "currentColor" end)
+      |> assign_new(:stroke, fn -> "none" end)
+
+    ~H"""
+    <svg class={@class} fill={@fill} stroke={@stroke} aria-hidden="true" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M3.75 4.5a.75.75 0 01.75-.75h.75c8.284 0 15 6.716 15 15v.75a.75.75 0 01-.75.75h-.75a.75.75 0 01-.75-.75v-.75C18 11.708 12.292 6 5.25 6H4.5a.75.75 0 01-.75-.75V4.5zm0 6.75a.75.75 0 01.75-.75h.75a8.25 8.25 0 018.25 8.25v.75a.75.75 0 01-.75.75H12a.75.75 0 01-.75-.75v-.75a6 6 0 00-6-6H4.5a.75.75 0 01-.75-.75v-.75zm0 7.5a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" clip-rule="evenodd"></path>
     </svg>
     """
   end
@@ -2030,21 +2075,6 @@ defmodule Heroicons.Solid do
     """
   end
 
-  @doc "solid/exclaimation-triangle.svg"
-  def exclaimation_triangle(assigns) do
-    assigns =
-      assigns
-      |> assign_new(:class, fn -> "" end)
-      |> assign_new(:fill, fn -> "currentColor" end)
-      |> assign_new(:stroke, fn -> "none" end)
-
-    ~H"""
-    <svg class={@class} fill={@fill} stroke={@stroke} aria-hidden="true" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-    <path fill-rule="evenodd" d="M9.401 4.504c1.155-2.001 4.043-2.001 5.197 0l7.355 12.747c1.154 2-.29 4.5-2.599 4.5H4.645c-2.309 0-3.752-2.5-2.598-4.5L9.4 4.504zM12 9.75a.75.75 0 01.75.75v3.75a.75.75 0 01-1.5 0V10.5a.75.75 0 01.75-.75zM12 18a.75.75 0 100-1.5.75.75 0 000 1.5z" clip-rule="evenodd"></path>
-    </svg>
-    """
-  end
-
   @doc "solid/eye-slash.svg"
   def eye_slash(assigns) do
     assigns =
@@ -2300,6 +2330,21 @@ defmodule Heroicons.Solid do
     """
   end
 
+  @doc "solid/exclamation-circle.svg"
+  def exclamation_circle(assigns) do
+    assigns =
+      assigns
+      |> assign_new(:class, fn -> "" end)
+      |> assign_new(:fill, fn -> "currentColor" end)
+      |> assign_new(:stroke, fn -> "none" end)
+
+    ~H"""
+    <svg class={@class} fill={@fill} stroke={@stroke} aria-hidden="true" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zM12 8.25a.75.75 0 01.75.75v3.75a.75.75 0 01-1.5 0V9a.75.75 0 01.75-.75zm0 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z" clip-rule="evenodd"></path>
+    </svg>
+    """
+  end
+
   @doc "solid/document-minus.svg"
   def document_minus(assigns) do
     assigns =
@@ -2506,6 +2551,21 @@ defmodule Heroicons.Solid do
     ~H"""
     <svg class={@class} fill={@fill} stroke={@stroke} aria-hidden="true" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
     <path fill-rule="evenodd" d="M12 1.5c-1.921 0-3.816.111-5.68.327-1.497.174-2.57 1.46-2.57 2.93V21.75a.75.75 0 001.029.696l3.471-1.388 3.472 1.388a.75.75 0 00.556 0l3.472-1.388 3.471 1.388a.75.75 0 001.029-.696V4.757c0-1.47-1.073-2.756-2.57-2.93A49.255 49.255 0 0012 1.5zm-.97 6.53a.75.75 0 10-1.06-1.06L7.72 9.22a.75.75 0 000 1.06l2.25 2.25a.75.75 0 101.06-1.06l-.97-.97h3.065a1.875 1.875 0 010 3.75H12a.75.75 0 000 1.5h1.125a3.375 3.375 0 100-6.75h-3.064l.97-.97z" clip-rule="evenodd"></path>
+    </svg>
+    """
+  end
+
+  @doc "solid/bars-arrow-up.svg"
+  def bars_arrow_up(assigns) do
+    assigns =
+      assigns
+      |> assign_new(:class, fn -> "" end)
+      |> assign_new(:fill, fn -> "currentColor" end)
+      |> assign_new(:stroke, fn -> "none" end)
+
+    ~H"""
+    <svg class={@class} fill={@fill} stroke={@stroke} aria-hidden="true" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M2.25 4.5A.75.75 0 013 3.75h14.25a.75.75 0 010 1.5H3a.75.75 0 01-.75-.75zm14.47 3.97a.75.75 0 011.06 0l3.75 3.75a.75.75 0 11-1.06 1.06L18 10.81V21a.75.75 0 01-1.5 0V10.81l-2.47 2.47a.75.75 0 11-1.06-1.06l3.75-3.75zM2.25 9A.75.75 0 013 8.25h9.75a.75.75 0 010 1.5H3A.75.75 0 012.25 9zm0 4.5a.75.75 0 01.75-.75h5.25a.75.75 0 010 1.5H3a.75.75 0 01-.75-.75z" clip-rule="evenodd"></path>
     </svg>
     """
   end
@@ -3665,8 +3725,8 @@ defmodule Heroicons.Solid do
     """
   end
 
-  @doc "solid/code-square.svg"
-  def code_square(assigns) do
+  @doc "solid/chevron-up-down.svg"
+  def chevron_up_down(assigns) do
     assigns =
       assigns
       |> assign_new(:class, fn -> "" end)
@@ -3675,7 +3735,7 @@ defmodule Heroicons.Solid do
 
     ~H"""
     <svg class={@class} fill={@fill} stroke={@stroke} aria-hidden="true" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-    <path fill-rule="evenodd" d="M3 6a3 3 0 013-3h12a3 3 0 013 3v12a3 3 0 01-3 3H6a3 3 0 01-3-3V6zm14.25 6a.75.75 0 01-.22.53l-2.25 2.25a.75.75 0 11-1.06-1.06L15.44 12l-1.72-1.72a.75.75 0 111.06-1.06l2.25 2.25c.141.14.22.331.22.53zm-10.28-.53a.75.75 0 000 1.06l2.25 2.25a.75.75 0 101.06-1.06L8.56 12l1.72-1.72a.75.75 0 10-1.06-1.06l-2.25 2.25z" clip-rule="evenodd"></path>
+    <path fill-rule="evenodd" d="M11.47 4.72a.75.75 0 011.06 0l3.75 3.75a.75.75 0 01-1.06 1.06L12 6.31 8.78 9.53a.75.75 0 01-1.06-1.06l3.75-3.75zm-3.75 9.75a.75.75 0 011.06 0L12 17.69l3.22-3.22a.75.75 0 111.06 1.06l-3.75 3.75a.75.75 0 01-1.06 0l-3.75-3.75a.75.75 0 010-1.06z" clip-rule="evenodd"></path>
     </svg>
     """
   end

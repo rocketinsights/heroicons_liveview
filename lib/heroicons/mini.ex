@@ -860,6 +860,21 @@ defmodule Heroicons.Mini do
     """
   end
 
+  @doc "mini/exclamation-triangle.svg"
+  def exclamation_triangle(assigns) do
+    assigns =
+      assigns
+      |> assign_new(:class, fn -> "" end)
+      |> assign_new(:fill, fn -> "currentColor" end)
+      |> assign_new(:stroke, fn -> "none" end)
+
+    ~H"""
+    <svg class={@class} fill={@fill} stroke={@stroke} aria-hidden="true" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M8.485 3.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 3.495zM10 6a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 0110 6zm0 9a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path>
+    </svg>
+    """
+  end
+
   @doc "mini/building-office-2.svg"
   def building_office_2(assigns) do
     assigns =
@@ -1081,6 +1096,21 @@ defmodule Heroicons.Mini do
     ~H"""
     <svg class={@class} fill={@fill} stroke={@stroke} aria-hidden="true" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
     <path fill-rule="evenodd" d="M13.2 2.24a.75.75 0 00.04 1.06l2.1 1.95H6.75a.75.75 0 000 1.5h8.59l-2.1 1.95a.75.75 0 101.02 1.1l3.5-3.25a.75.75 0 000-1.1l-3.5-3.25a.75.75 0 00-1.06.04zm-6.4 8a.75.75 0 00-1.06-.04l-3.5 3.25a.75.75 0 000 1.1l3.5 3.25a.75.75 0 101.02-1.1l-2.1-1.95h8.59a.75.75 0 000-1.5H4.66l2.1-1.95a.75.75 0 00.04-1.06z" clip-rule="evenodd"></path>
+    </svg>
+    """
+  end
+
+  @doc "mini/bars-arrow-down.svg"
+  def bars_arrow_down(assigns) do
+    assigns =
+      assigns
+      |> assign_new(:class, fn -> "" end)
+      |> assign_new(:fill, fn -> "currentColor" end)
+      |> assign_new(:stroke, fn -> "none" end)
+
+    ~H"""
+    <svg class={@class} fill={@fill} stroke={@stroke} aria-hidden="true" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M2 3.75A.75.75 0 012.75 3h11.5a.75.75 0 010 1.5H2.75A.75.75 0 012 3.75zM2 7.5a.75.75 0 01.75-.75h7.508a.75.75 0 010 1.5H2.75A.75.75 0 012 7.5zM14 7a.75.75 0 01.75.75v6.59l1.95-2.1a.75.75 0 111.1 1.02l-3.25 3.5a.75.75 0 01-1.1 0l-3.25-3.5a.75.75 0 111.1-1.02l1.95 2.1V7.75A.75.75 0 0114 7zM2 11.25a.75.75 0 01.75-.75h4.562a.75.75 0 010 1.5H2.75a.75.75 0 01-.75-.75z" clip-rule="evenodd"></path>
     </svg>
     """
   end
@@ -1520,21 +1550,6 @@ defmodule Heroicons.Mini do
     """
   end
 
-  @doc "mini/exclaimation-circle.svg"
-  def exclaimation_circle(assigns) do
-    assigns =
-      assigns
-      |> assign_new(:class, fn -> "" end)
-      |> assign_new(:fill, fn -> "currentColor" end)
-      |> assign_new(:stroke, fn -> "none" end)
-
-    ~H"""
-    <svg class={@class} fill={@fill} stroke={@stroke} aria-hidden="true" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-5a.75.75 0 01.75.75v4.5a.75.75 0 01-1.5 0v-4.5A.75.75 0 0110 5zm0 10a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path>
-    </svg>
-    """
-  end
-
   @doc "mini/gif.svg"
   def gif(assigns) do
     assigns =
@@ -1771,6 +1786,21 @@ defmodule Heroicons.Mini do
     ~H"""
     <svg class={@class} fill={@fill} stroke={@stroke} aria-hidden="true" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
     <path d="M2 3a1 1 0 00-1 1v1a1 1 0 001 1h16a1 1 0 001-1V4a1 1 0 00-1-1H2z"></path><path fill-rule="evenodd" d="M2 7.5h16l-.811 7.71a2 2 0 01-1.99 1.79H4.802a2 2 0 01-1.99-1.79L2 7.5zm5.22 1.72a.75.75 0 011.06 0L10 10.94l1.72-1.72a.75.75 0 111.06 1.06L11.06 12l1.72 1.72a.75.75 0 11-1.06 1.06L10 13.06l-1.72 1.72a.75.75 0 01-1.06-1.06L8.94 12l-1.72-1.72a.75.75 0 010-1.06z" clip-rule="evenodd"></path>
+    </svg>
+    """
+  end
+
+  @doc "mini/rss.svg"
+  def rss(assigns) do
+    assigns =
+      assigns
+      |> assign_new(:class, fn -> "" end)
+      |> assign_new(:fill, fn -> "currentColor" end)
+      |> assign_new(:stroke, fn -> "none" end)
+
+    ~H"""
+    <svg class={@class} fill={@fill} stroke={@stroke} aria-hidden="true" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <path d="M3.75 3a.75.75 0 00-.75.75v.5c0 .414.336.75.75.75H4c6.075 0 11 4.925 11 11v.25c0 .414.336.75.75.75h.5a.75.75 0 00.75-.75V16C17 8.82 11.18 3 4 3h-.25z"></path><path d="M3 8.75A.75.75 0 013.75 8H4a8 8 0 018 8v.25a.75.75 0 01-.75.75h-.5a.75.75 0 01-.75-.75V16a6 6 0 00-6-6h-.25A.75.75 0 013 9.25v-.5zM7 15a2 2 0 11-4 0 2 2 0 014 0z"></path>
     </svg>
     """
   end
@@ -2045,21 +2075,6 @@ defmodule Heroicons.Mini do
     """
   end
 
-  @doc "mini/exclaimation-triangle.svg"
-  def exclaimation_triangle(assigns) do
-    assigns =
-      assigns
-      |> assign_new(:class, fn -> "" end)
-      |> assign_new(:fill, fn -> "currentColor" end)
-      |> assign_new(:stroke, fn -> "none" end)
-
-    ~H"""
-    <svg class={@class} fill={@fill} stroke={@stroke} aria-hidden="true" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-    <path fill-rule="evenodd" d="M8.485 3.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 3.495zM10 6a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 0110 6zm0 9a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path>
-    </svg>
-    """
-  end
-
   @doc "mini/eye-slash.svg"
   def eye_slash(assigns) do
     assigns =
@@ -2315,6 +2330,21 @@ defmodule Heroicons.Mini do
     """
   end
 
+  @doc "mini/exclamation-circle.svg"
+  def exclamation_circle(assigns) do
+    assigns =
+      assigns
+      |> assign_new(:class, fn -> "" end)
+      |> assign_new(:fill, fn -> "currentColor" end)
+      |> assign_new(:stroke, fn -> "none" end)
+
+    ~H"""
+    <svg class={@class} fill={@fill} stroke={@stroke} aria-hidden="true" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-5a.75.75 0 01.75.75v4.5a.75.75 0 01-1.5 0v-4.5A.75.75 0 0110 5zm0 10a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path>
+    </svg>
+    """
+  end
+
   @doc "mini/document-minus.svg"
   def document_minus(assigns) do
     assigns =
@@ -2521,6 +2551,21 @@ defmodule Heroicons.Mini do
     ~H"""
     <svg class={@class} fill={@fill} stroke={@stroke} aria-hidden="true" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
     <path fill-rule="evenodd" d="M4.93 1.31a41.401 41.401 0 0110.14 0C16.194 1.45 17 2.414 17 3.517V18.25a.75.75 0 01-1.075.676l-2.8-1.344-2.8 1.344a.75.75 0 01-.65 0l-2.8-1.344-2.8 1.344A.75.75 0 013 18.25V3.517c0-1.103.806-2.068 1.93-2.207zm4.822 4.997a.75.75 0 10-1.004-1.114l-2.5 2.25a.75.75 0 000 1.114l2.5 2.25a.75.75 0 001.004-1.114L8.704 8.75h1.921a1.875 1.875 0 010 3.75.75.75 0 000 1.5 3.375 3.375 0 100-6.75h-1.92l1.047-.943z" clip-rule="evenodd"></path>
+    </svg>
+    """
+  end
+
+  @doc "mini/bars-arrow-up.svg"
+  def bars_arrow_up(assigns) do
+    assigns =
+      assigns
+      |> assign_new(:class, fn -> "" end)
+      |> assign_new(:fill, fn -> "currentColor" end)
+      |> assign_new(:stroke, fn -> "none" end)
+
+    ~H"""
+    <svg class={@class} fill={@fill} stroke={@stroke} aria-hidden="true" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M2 3.75A.75.75 0 012.75 3h11.5a.75.75 0 010 1.5H2.75A.75.75 0 012 3.75zM2 7.5a.75.75 0 01.75-.75h6.365a.75.75 0 010 1.5H2.75A.75.75 0 012 7.5zM14 7a.75.75 0 01.55.24l3.25 3.5a.75.75 0 11-1.1 1.02l-1.95-2.1v6.59a.75.75 0 01-1.5 0V9.66l-1.95 2.1a.75.75 0 11-1.1-1.02l3.25-3.5A.75.75 0 0114 7zM2 11.25a.75.75 0 01.75-.75H7A.75.75 0 017 12H2.75a.75.75 0 01-.75-.75z" clip-rule="evenodd"></path>
     </svg>
     """
   end
@@ -3676,6 +3721,21 @@ defmodule Heroicons.Mini do
     ~H"""
     <svg class={@class} fill={@fill} stroke={@stroke} aria-hidden="true" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
     <path d="M3.75 3A1.75 1.75 0 002 4.75v3.26a3.235 3.235 0 011.75-.51h12.5c.644 0 1.245.188 1.75.51V6.75A1.75 1.75 0 0016.25 5h-4.836a.25.25 0 01-.177-.073L9.823 3.513A1.75 1.75 0 008.586 3H3.75zM3.75 9A1.75 1.75 0 002 10.75v4.5c0 .966.784 1.75 1.75 1.75h12.5A1.75 1.75 0 0018 15.25v-4.5A1.75 1.75 0 0016.25 9H3.75z"></path>
+    </svg>
+    """
+  end
+
+  @doc "mini/chevron-up-down.svg"
+  def chevron_up_down(assigns) do
+    assigns =
+      assigns
+      |> assign_new(:class, fn -> "" end)
+      |> assign_new(:fill, fn -> "currentColor" end)
+      |> assign_new(:stroke, fn -> "none" end)
+
+    ~H"""
+    <svg class={@class} fill={@fill} stroke={@stroke} aria-hidden="true" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M10 3a.75.75 0 01.55.24l3.25 3.5a.75.75 0 11-1.1 1.02L10 4.852 7.3 7.76a.75.75 0 01-1.1-1.02l3.25-3.5A.75.75 0 0110 3zm-3.76 9.2a.75.75 0 011.06.04l2.7 2.908 2.7-2.908a.75.75 0 111.1 1.02l-3.25 3.5a.75.75 0 01-1.1 0l-3.25-3.5a.75.75 0 01.04-1.06z" clip-rule="evenodd"></path>
     </svg>
     """
   end

@@ -860,6 +860,21 @@ defmodule Heroicons.Outline do
     """
   end
 
+  @doc "outline/exclamation-triangle.svg"
+  def exclamation_triangle(assigns) do
+    assigns =
+      assigns
+      |> assign_new(:class, fn -> "" end)
+      |> assign_new(:fill, fn -> "none" end)
+      |> assign_new(:stroke, fn -> "currentColor" end)
+
+    ~H"""
+    <svg class={@class} fill={@fill} stroke={@stroke} aria-hidden="true" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M12 10.5v3.75m-9.303 3.376C1.83 19.126 2.914 21 4.645 21h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 4.88c-.866-1.501-3.032-1.501-3.898 0L2.697 17.626zM12 17.25h.007v.008H12v-.008z"></path>
+    </svg>
+    """
+  end
+
   @doc "outline/building-office-2.svg"
   def building_office_2(assigns) do
     assigns =
@@ -1081,6 +1096,21 @@ defmodule Heroicons.Outline do
     ~H"""
     <svg class={@class} fill={@fill} stroke={@stroke} aria-hidden="true" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
     <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5"></path>
+    </svg>
+    """
+  end
+
+  @doc "outline/bars-arrow-down.svg"
+  def bars_arrow_down(assigns) do
+    assigns =
+      assigns
+      |> assign_new(:class, fn -> "" end)
+      |> assign_new(:fill, fn -> "none" end)
+      |> assign_new(:stroke, fn -> "currentColor" end)
+
+    ~H"""
+    <svg class={@class} fill={@fill} stroke={@stroke} aria-hidden="true" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M3 4.5h14.25M3 9h9.75M3 13.5h9.75m4.5-4.5v12m0 0l-3.75-3.75M17.25 21L21 17.25"></path>
     </svg>
     """
   end
@@ -1520,21 +1550,6 @@ defmodule Heroicons.Outline do
     """
   end
 
-  @doc "outline/exclaimation-circle.svg"
-  def exclaimation_circle(assigns) do
-    assigns =
-      assigns
-      |> assign_new(:class, fn -> "" end)
-      |> assign_new(:fill, fn -> "none" end)
-      |> assign_new(:stroke, fn -> "currentColor" end)
-
-    ~H"""
-    <svg class={@class} fill={@fill} stroke={@stroke} aria-hidden="true" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z"></path>
-    </svg>
-    """
-  end
-
   @doc "outline/gif.svg"
   def gif(assigns) do
     assigns =
@@ -1771,6 +1786,21 @@ defmodule Heroicons.Outline do
     ~H"""
     <svg class={@class} fill={@fill} stroke={@stroke} aria-hidden="true" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
     <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5m6 4.125l2.25 2.25m0 0l2.25 2.25M12 13.875l2.25-2.25M12 13.875l-2.25 2.25M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"></path>
+    </svg>
+    """
+  end
+
+  @doc "outline/rss.svg"
+  def rss(assigns) do
+    assigns =
+      assigns
+      |> assign_new(:class, fn -> "" end)
+      |> assign_new(:fill, fn -> "none" end)
+      |> assign_new(:stroke, fn -> "currentColor" end)
+
+    ~H"""
+    <svg class={@class} fill={@fill} stroke={@stroke} aria-hidden="true" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 19.5v-.75a7.5 7.5 0 00-7.5-7.5H4.5m0-6.75h.75c7.87 0 14.25 6.38 14.25 14.25v.75M6 18.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"></path>
     </svg>
     """
   end
@@ -2045,21 +2075,6 @@ defmodule Heroicons.Outline do
     """
   end
 
-  @doc "outline/exclaimation-triangle.svg"
-  def exclaimation_triangle(assigns) do
-    assigns =
-      assigns
-      |> assign_new(:class, fn -> "" end)
-      |> assign_new(:fill, fn -> "none" end)
-      |> assign_new(:stroke, fn -> "currentColor" end)
-
-    ~H"""
-    <svg class={@class} fill={@fill} stroke={@stroke} aria-hidden="true" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-    <path stroke-linecap="round" stroke-linejoin="round" d="M12 10.5v3.75m-9.303 3.376C1.83 19.126 2.914 21 4.645 21h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 4.88c-.866-1.501-3.032-1.501-3.898 0L2.697 17.626zM12 17.25h.007v.008H12v-.008z"></path>
-    </svg>
-    """
-  end
-
   @doc "outline/eye-slash.svg"
   def eye_slash(assigns) do
     assigns =
@@ -2315,6 +2330,21 @@ defmodule Heroicons.Outline do
     """
   end
 
+  @doc "outline/exclamation-circle.svg"
+  def exclamation_circle(assigns) do
+    assigns =
+      assigns
+      |> assign_new(:class, fn -> "" end)
+      |> assign_new(:fill, fn -> "none" end)
+      |> assign_new(:stroke, fn -> "currentColor" end)
+
+    ~H"""
+    <svg class={@class} fill={@fill} stroke={@stroke} aria-hidden="true" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z"></path>
+    </svg>
+    """
+  end
+
   @doc "outline/document-minus.svg"
   def document_minus(assigns) do
     assigns =
@@ -2521,6 +2551,21 @@ defmodule Heroicons.Outline do
     ~H"""
     <svg class={@class} fill={@fill} stroke={@stroke} aria-hidden="true" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 9.75h4.875a2.625 2.625 0 010 5.25H12M8.25 9.75L10.5 7.5M8.25 9.75L10.5 12m9-7.243V21.75l-3.75-1.5-3.75 1.5-3.75-1.5-3.75 1.5V4.757c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0c1.1.128 1.907 1.077 1.907 2.185z"></path>
+    </svg>
+    """
+  end
+
+  @doc "outline/bars-arrow-up.svg"
+  def bars_arrow_up(assigns) do
+    assigns =
+      assigns
+      |> assign_new(:class, fn -> "" end)
+      |> assign_new(:fill, fn -> "none" end)
+      |> assign_new(:stroke, fn -> "currentColor" end)
+
+    ~H"""
+    <svg class={@class} fill={@fill} stroke={@stroke} aria-hidden="true" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M3 4.5h14.25M3 9h9.75M3 13.5h5.25m5.25-.75L17.25 9m0 0L21 12.75M17.25 9v12"></path>
     </svg>
     """
   end
@@ -3676,6 +3721,21 @@ defmodule Heroicons.Outline do
     ~H"""
     <svg class={@class} fill={@fill} stroke={@stroke} aria-hidden="true" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
     <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z"></path>
+    </svg>
+    """
+  end
+
+  @doc "outline/chevron-up-down.svg"
+  def chevron_up_down(assigns) do
+    assigns =
+      assigns
+      |> assign_new(:class, fn -> "" end)
+      |> assign_new(:fill, fn -> "none" end)
+      |> assign_new(:stroke, fn -> "currentColor" end)
+
+    ~H"""
+    <svg class={@class} fill={@fill} stroke={@stroke} aria-hidden="true" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 15L12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9"></path>
     </svg>
     """
   end
